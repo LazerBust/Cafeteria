@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cafeteria Online</title>
+    <link rel="stylesheet" href="../frontend/CSS/style.css">
+</head>
+<body>
+    <form action="http://localhost:3000/pedido" method="post">
+        <h1 class="pcaf">Pedido de cafetería</h1>
+        
+        <label for="nom-c">Nombre del cliente *</label><br>
+        <input type="text" id="nom-c" name="nom_c" placeholder="Tu nombre"><br>
+        
+        <label for="corr-e">Correo electrónico *</label><br>
+        <input type="text" id="corr-e" name="corr_e" placeholder="nombre@correo.com"><br>
+        
+        <label for="producto">Producto *</label><br>
+        <select name="producto" id="producto">
+            <option value="" disabled selected>Selecciona un producto</option>
+            <option value="Café Americano">Café Americano</option>
+            <option value="Capuccino">Capuccino</option>
+            <option value="Latte">Latte</option>
+        </select><br>
+        
+        <label for="cant">Cantidad *</label><br>
+        <input type="number" id="cant" name="cantidad" class="cant"><br>
+        
+        <label for="tamano">Tamaño</label><br>
+        <input type="radio" id="chico" name="tamano" value="Chico">
+        <label for="chico" class="size">Chico</label>
+        <input type="radio" id="mediano" name="tamano" value="Mediano">
+        <label for="mediano" class="size">Mediano</label>
+        <input type="radio" id="grande" name="tamano" value="Grande">
+        <label for="grande" class="size">Grande</label><br>
+        
+        <input type="checkbox" id="paraLlevar" name="para_llevar" value="Sí">
+        <label for="paraLlevar" class="para-llevar">Pedido para llevar</label><br>
+        
+        <label for="observaciones">Obeservaciones</label><br>
+        <input type="text" id="observaciones" name="observaciones" placeholder="Sin azúcar, extra caliente, etc."><br>
+
+        <button type="submit" class="registrar">Registrar</button>
+        <button type="reset" class="limpiar">Limpiar</button>
+    </form>
+
+    <script src="../frontend/JS/script.js"></script>
+</body>
+</html>
